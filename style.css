@@ -9,7 +9,7 @@ Date: August 2024
     margin: 0;
     box-sizing: border-box;
    /* background: black; */
-   /* color: rgb(210, 211, 214); */
+   color: rgb(210, 211, 214); 
 }
 
 body{
@@ -100,7 +100,7 @@ footer{
 #site-navigation li:hover .sub-menu {
     display: block;
     position: absolute;
-    background: #fff !important; /* not working */
+    background: #3e3e3e !important; /* not working */
     padding: 5px;
 }
 
