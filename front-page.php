@@ -5,6 +5,11 @@
 <!-- the index.php is assigned to the blog page!!!--> 
 <!--if we have post or pages show them-->
 
+
+<div id="hero">
+<img src="<?php echo get_template_directory_uri() ;?>/images/owlmain.png)" alt="owl_main_image">
+</div>
+
 <div id="wrapper">
 
 

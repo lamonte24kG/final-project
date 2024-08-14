@@ -5,6 +5,10 @@
 <!-- the index.php is assigned to the blog page!!!--> 
 <!--if we have post or pages show them-->
 
+<div id="hero">
+<img src="<?php echo get_template_directory_uri() ;?>/images/home_music.png)" alt=""><!-- alt name showing on page -->
+</div>
+
 <div id="wrapper">
 <main>
 <?php if(have_posts()) : ?>
@@ -36,7 +40,7 @@
 </main>
 
 
-
+<?php get_sidebar(); ?>
 
 
 </div>
