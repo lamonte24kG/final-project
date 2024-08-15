@@ -1,4 +1,18 @@
 <footer>
+<div class="footer">
+	
+<?php dynamic_sidebar('sidebar-footer'); ?>
+</div>
+
+<div class="inner-footer">
+<ul>
+	<li>Copyright &copy;<?php echo date('Y') ; ?></li>
+	<li>All Rights Reserved</li>
+	<li><a href="">Web Design by LaMonte</a></li>
+	<li><a href="https://validator.w3.org/">Valid HTML</a></li>
+	<li><a href="https://jigsaw.w3.org/css-validator/">Valid CSS</a></li>
+</ul>
+</div>
 
 </footer>
 

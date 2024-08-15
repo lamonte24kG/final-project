@@ -35,8 +35,76 @@ function init_widgets() {
     'before_title' => '<h3>',
     'after_title' => '</h3>'
     ));
+
+    register_sidebar(array(
+    'name' => 'Sidebar About',
+    'id' => 'sidebar-about',
+    'before_widget' => '<div class="inner-widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
+    ));
+    
+    register_sidebar(array(
+    'name' => 'Sidebar Music',
+    'id' => 'sidebar-music',
+    'before_widget' => '<div class="inner-widget">',     
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
+    ));
+
+    register_sidebar(array(
+    'name' => 'Sidebar Footer',
+    'id' => 'sidebar-footer',
+    'before_widget' => '<div class="row">',   
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
+    ));
+    
+    register_sidebar(array(
+    'name' => 'Sidebar Contact',
+    'id' => 'sidebar-contact',
+    'before_widget' => '<div class="inner-widget">',     
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
+    ));
+
     } // end function init widgets
     // add action AFTER the function
     add_action('widgets_init', 'init_widgets');
     
+
+
+    //  Functions to display a list of all the shortcodes
+function diwp_get_list_of_shortcodes(){
+ 
+    // Get the array of all the shortcodes
+    global $shortcode_tags;
+     
+    $shortcodes = $shortcode_tags;
+     
+    // sort the shortcodes with alphabetical order
+    ksort($shortcodes);
+     
+    $shortcode_output = "<ul>";
+     
+    foreach ($shortcodes as $shortcode => $value) {
+        $shortcode_output = $shortcode_output.'<li>['.$shortcode.']</li>';
+    }
+     
+    $shortcode_output = $shortcode_output. "</ul>";
+     
+    return $shortcode_output;
+ 
+}
+add_shortcode('get-shortcode-list', 'diwp_get_list_of_shortcodes');
     
+function age_requirement(){
+    return '<p><small>Age 21 and over after 9pm
+    </small></p>';
+}
+
+add_shortcode('disclaimer','age_requirement');

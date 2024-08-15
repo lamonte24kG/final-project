@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title><?php bloginfo('name');?></title>
 <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo Black">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo Black"> -->
 <?php wp_head();  ?> 
 <!--htis function will allow your plugin information i.e. stylesheet, javascript etc to display before the closing head-->
 </head>

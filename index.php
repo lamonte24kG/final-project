@@ -5,7 +5,7 @@
 <!--if we have post or pages show them-->
 
 <div id="hero">
-<img src="<?php echo get_template_directory_uri() ;?>/images/home_music.png)" alt=""><!-- alt name showing on page -->
+<img src="<?php echo get_template_directory_uri() ;?>/images/owlnewmain.png)" alt=""><!-- alt name showing on page -->
 </div>
 
 <div id="wrapper">

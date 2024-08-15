@@ -6,15 +6,17 @@
 <!--if we have post or pages show them-->
 
 <div id="hero">
-<img src="<?php echo get_template_directory_uri() ;?>/images/home_music.png)" alt=""><!-- alt name showing on page -->
+<img src="<?php echo get_template_directory_uri() ;?>/images/owlnewmain.png)" alt=""><!-- alt name showing on page -->
 </div>
 
 <div id="wrapper">
 <main>
 <?php if(have_posts()) : ?>
-<?php if(has_post_thumbnail()) : ?>
-<?php the_post_thumbnail(); ?>
-<?php endif ?>
+    <?php if(has_post_thumbnail()) :?>
+  
+    <?php the_post_thumbnail(); ?>
+
+    <?php endif ?>
 
 
 <!--show post by using a php while loop-->
@@ -30,9 +32,8 @@
 
 
 
-<aside>
-
-
+<aside id="secondary" class="widget-area">
+<?php dynamic_sidebar('sidebar-music'); ?>
 </aside>
 
 
